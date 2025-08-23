@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        position: relative;
+        height: 130px;
+        border: 1px solid #000;
+      }
+
+      header span {
+        position: absolute;
+        top: 8px;
+        left: 12px;
+      }
+      body {
+        position: relative;
+        min-height: 200px;
+      }
+      header::before {
+        content: "";
+        position: absolute;
+        top: 50px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border: 2px dotted #000;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span>Header</span>
+      <span style="position: absolute; top: 60px; left: 30px">Navigator</span>
+    </header>
+  </body>
+</html>
