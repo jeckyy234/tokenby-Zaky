@@ -24,18 +24,70 @@
         content: "";
         position: absolute;
         top: 50px;
-        left: 15px;
-        right: 15px;
-        bottom: 15px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
         border: 2px dotted #000;
         pointer-events: none;
       }
+
+      main{
+        display: flex;
+        gap: 10px;
+        padding: 10px 0;
+      }
+      section {
+        flex: 2;
+        border: 1px solid #000;
+        padding: 10px;
+
+      }
+      article p { 
+        padding: 15px;
+      }
+      aside{
+        flex: 1;
+        border: 1px solid #000;
+        padding: 10px;
+      }
+      mainpage {
+        display: block;
+        border: 1px solid #000;
+        padding: 10px;
+        min-height: 150px;
+      }
+    footer {
+      border: 1px solid #000;
+      padding: 10px;
+    }
+
     </style>
   </head>
-  <body>
+
+    <h4>Page</h4>
     <header>
       <span>Header</span>
       <span style="position: absolute; top: 60px; left: 30px">Navigator</span>
     </header>
-  </body>
+    <br>
+    <mainpage>
+      <p>Main Page</p>
+    <main>
+    <section>
+      <p>Content</p>
+      <article>
+        <p style="border: 2px dotted #000">Article</p>
+        <p style="border: 2px dotted #000">Article</p>
+      </article>
+     
+    </section>
+     <aside>
+        <p>Sidebar</p>
+      </aside>
+    </main>
+    </mainpage>
+    <br>
+    <footer>
+      <p>Footer</p>
+    </footer>
 </html>
